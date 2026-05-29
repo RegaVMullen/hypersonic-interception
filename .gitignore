@@ -1,0 +1,15 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+.DS_Store
+.vscode/
+*.swp
+*.swo
+*~
+.idea/
+*.iml
+*.Rcheck/
+*.tar.gz
+inst/doc/

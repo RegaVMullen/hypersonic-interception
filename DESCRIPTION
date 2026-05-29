@@ -1,0 +1,28 @@
+Package: hypersonicIntercept
+Title: Predictive Modeling for Hypersonic Missile Interception
+Version: 0.1.0
+Authors@R: 
+    person("R.", "Mullen", email = "your.email@example.com", 
+           role = c("aut", "cre"))
+Description: 
+    An R package providing statistical models and predictive analytics for 
+    analyzing hypersonic missile interception success rates. Implements 
+    logistic regression models examining relationships between missile speed 
+    characteristics (Mach number, hypersonic designation) and interception outcomes.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Depends: 
+    R (>= 4.0)
+Imports:
+    stats,
+    graphics,
+    car
+Suggests:
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+VignetteBuilder: knitr
+URL: https://github.com/yourusername/hypersonic-interception
+BugReports: https://github.com/yourusername/hypersonic-interception/issues

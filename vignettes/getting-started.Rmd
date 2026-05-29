@@ -1,0 +1,112 @@
+---
+title: "Getting Started with hypersonicIntercept"
+author: "R. Mullen"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Getting Started with hypersonicIntercept}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+## Introduction
+
+The `hypersonicIntercept` package provides tools for statistical modeling of missile interception success rates based on speed characteristics. This vignette demonstrates the basic workflow.
+
+## Loading Data
+
+First, load your missile launch database from an Excel file:
+
+```{r eval=FALSE}
+library(hypersonicIntercept)
+
+data <- import_missile_data("path/to/MissileLaunchDatabase.xlsx")
+head(data)
+```
+
+## Fitting Models
+
+The package includes several pre-built logistic regression models:
+
+### Simple Mach Model
+```{r eval=FALSE}
+model_mach <- fit_mach_model(data)
+summary(model_mach)
+```
+
+### Hypersonic Designation Model
+```{r eval=FALSE}
+model_hypersonic <- fit_hypersonic_model(data)
+summary(model_hypersonic)
+```
+
+### Non-linear Mach Model
+```{r eval=FALSE}
+model_mach_sq <- fit_mach_squared_model(data)
+summary(model_mach_sq)
+```
+
+### Interaction Model
+```{r eval=FALSE}
+model_interaction <- fit_interaction_model(data)
+summary(model_interaction)
+```
+
+## Making Predictions
+
+Generate predictions for new speed values:
+
+```{r eval=FALSE}
+# Create a sequence of Mach speeds
+new_speeds <- data.frame(Mach = seq(1, 22, by = 0.5))
+
+# Get predicted probabilities of successful interception
+predictions <- predict_interception(model_mach, new_speeds)
+
+# View first few predictions
+head(predictions)
+```
+
+## Comparing Models
+
+Compare multiple models using AIC and BIC criteria:
+
+```{r eval=FALSE}
+comparison <- compare_models(
+  model_mach,
+  model_hypersonic,
+  model_mach_sq,
+  model_interaction
+)
+
+print(comparison)
+```
+
+The model with the lowest AIC has the best balance between fit quality and model complexity.
+
+## Visualization
+
+Plot the fitted model against your data:
+
+```{r eval=FALSE}
+plot_model_fit(data, model_mach, "Mach", "Mach Speed")
+```
+
+This creates a scatter plot of your observed interception outcomes with the fitted logistic curve overlaid in red.
+
+## Workflow Summary
+
+1. **Load data** using `import_missile_data()`
+2. **Fit models** using the various `fit_*_model()` functions
+3. **Compare models** using `compare_models()`
+4. **Make predictions** using `predict_interception()`
+5. **Visualize results** using `plot_model_fit()`
+
+For more information, see the model diagnostics vignette and individual function documentation.
