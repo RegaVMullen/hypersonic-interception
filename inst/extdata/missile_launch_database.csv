@@ -1,0 +1,222 @@
+LaunchDate,MissileType,DefenseSystem,Weather,Mach,Hypersonic,Distance_km,Altitude_m,RadarSignature,Intercept
+2015-01-01,Ballistic,PAC-3,Low Visibility,1.96,0,440.6,13496,7.12,0
+2015-01-17,Air-Breathing Hypersonic,S-400,Cloudy,1.04,,374.5,6097,9.27,0
+2015-02-03,Air-Breathing Hypersonic,S-400,Clear,1.41,0,,29181,6.38,0
+2015-02-19,Ballistic,S-400,Cloudy,1.33,0,320.2,27102,7.94,1
+2015-03-08,Hypersonic Glide,PAC-3,Clear,2.1,0,208.2,28412,5.09,0
+2015-03-24,Ballistic,THAAD,Cloudy,2.02,0,310.1,6211,1.21,0
+2015-04-10,Hypersonic Glide,THAAD,Cloudy,2.34,0,145.7,15599,2.01,0
+2015-04-26,Ballistic,THAAD,Cloudy,1.13,0,345.5,14674,1.39,1
+2015-05-13,Air-Breathing Hypersonic,Experimental,Clear,1.63,0,150.9,23834,7.9,0
+2015-05-29,Hypersonic Glide,Experimental,Rain,1.04,0,,8694,0.26,1
+2015-06-15,Ballistic,THAAD,Clear,,0,430.4,15824,5.54,1
+2015-07-01,Cruise,S-400,Cloudy,1.76,0,215.4,10330,3.69,0
+2015-07-18,Cruise,S-400,Cloudy,,0,393.2,26324,8.04,0
+2015-08-03,Ballistic,S-400,Clear,1.3,,308.3,15988,5.52,0
+2015-08-20,Hypersonic Glide,Experimental,Cloudy,1.97,0,413.2,18923,6.12,1
+2015-09-05,Ballistic,PAC-3,Cloudy,1.82,,430.3,11176,0.86,0
+2015-09-22,Ballistic,PAC-3,Low Visibility,1.33,0,488.5,28397,3.09,0
+2015-10-08,Cruise,S-400,Clear,1.88,0,418.3,16681,10.0,0
+2015-10-25,Cruise,PAC-3,Low Visibility,2.21,0,326.1,29311,7.19,0
+2015-11-10,Cruise,PAC-3,Cloudy,1.01,0,339.2,13190,5.26,0
+2015-11-27,Cruise,PAC-3,Clear,,0,61.8,33175,7.69,0
+2015-12-13,Ballistic,PAC-3,Cloudy,2.05,0,468.1,34463,8.23,0
+2015-12-30,Ballistic,THAAD,Cloudy,1.51,,423.3,16427,0.74,0
+2016-01-15,Cruise,S-400,Rain,1.23,0,170.4,10221,9.72,0
+2016-02-01,Cruise,PAC-3,Clear,2.44,0,131.2,13674,6.42,0
+2016-02-17,Hypersonic Glide,PAC-3,Cloudy,1.5,,366.2,18697,4.5,1
+2016-03-05,Hypersonic Glide,S-400,Cloudy,1.14,0,189.0,33836,6.8,0
+2016-03-21,Cruise,S-400,Low Visibility,,0,202.9,28682,3.45,0
+2016-04-07,Ballistic,THAAD,Clear,2.27,0,52.7,28143,8.78,1
+2016-04-23,Ballistic,S-400,Rain,1.91,0,441.4,5274,7.8,1
+2016-05-10,Ballistic,Experimental,Cloudy,2.21,0,304.8,9125,6.4,0
+2016-05-26,Cruise,S-400,Cloudy,,0,230.4,22620,1.82,1
+2016-06-12,Ballistic,S-400,Cloudy,1.8,0,113.8,30657,9.66,0
+2016-06-29,Air-Breathing Hypersonic,S-400,Cloudy,2.46,0,334.9,19631,4.33,0
+2016-07-15,Ballistic,Experimental,Cloudy,1.57,0,63.8,4039,9.11,0
+2016-08-01,Hypersonic Glide,THAAD,Rain,,,385.8,29683,0.55,1
+2016-08-17,Air-Breathing Hypersonic,THAAD,Cloudy,2.24,0,146.8,29865,1.24,1
+2016-09-03,Hypersonic Glide,S-400,Rain,,0,238.9,10334,1.53,1
+2016-09-19,Ballistic,Experimental,Cloudy,2.29,0,203.4,26827,1.65,0
+2016-10-06,Cruise,Experimental,Low Visibility,1.87,0,216.5,9911,3.23,0
+2016-10-22,Ballistic,PAC-3,Cloudy,2.06,,374.7,31733,7.09,0
+2016-11-08,Hypersonic Glide,PAC-3,Clear,1.07,0,399.6,5583,3.46,0
+2016-11-24,Air-Breathing Hypersonic,THAAD,Cloudy,1.34,0,305.4,15592,9.41,1
+2016-12-11,Air-Breathing Hypersonic,S-400,Cloudy,1.43,0,88.2,33151,8.95,0
+2016-12-27,Ballistic,S-400,Rain,1.12,0,,8160,8.46,0
+2017-01-13,Hypersonic Glide,PAC-3,Clear,1.35,0,,16063,2.51,0
+2017-01-29,Ballistic,PAC-3,Clear,1.15,0,328.0,12560,6.35,0
+2017-02-15,Ballistic,S-400,Rain,1.42,0,,1420,5.51,0
+2017-03-03,Cruise,S-400,Clear,1.95,0,172.4,2337,1.25,1
+2017-03-20,Cruise,Experimental,Clear,1.55,0,347.9,17819,3.03,0
+2017-04-05,Ballistic,THAAD,Cloudy,1.56,0,268.5,8634,5.33,0
+2017-04-22,Cruise,THAAD,Low Visibility,,,248.9,34811,5.03,0
+2017-05-08,Ballistic,PAC-3,Cloudy,1.4,0,172.9,13434,1.69,0
+2017-05-25,Hypersonic Glide,PAC-3,Low Visibility,,0,389.7,1472,9.42,1
+2017-06-10,Ballistic,THAAD,Rain,,0,101.2,32613,1.54,1
+2017-06-27,Cruise,THAAD,Clear,1.91,0,243.5,29451,6.59,1
+2017-07-13,Ballistic,PAC-3,Rain,1.26,0,177.5,22923,7.21,0
+2017-07-30,Cruise,PAC-3,Cloudy,2.09,,355.3,27802,6.05,1
+2017-08-15,Ballistic,Experimental,Rain,1.25,0,269.0,5247,8.43,0
+2017-09-01,Cruise,Experimental,Rain,1.57,,,10397,5.64,0
+2017-09-17,Ballistic,S-400,Clear,2.48,0,70.4,29126,8.25,1
+2017-10-04,Ballistic,Experimental,Clear,,0,227.9,24514,0.28,0
+2017-10-20,Cruise,Experimental,Low Visibility,,0,319.7,5288,0.45,1
+2017-11-06,Ballistic,S-400,Clear,2.03,0,53.5,24840,6.41,0
+2017-11-23,Cruise,PAC-3,Low Visibility,2.26,0,185.6,15976,5.77,0
+2017-12-09,Ballistic,PAC-3,Rain,,0,145.1,681,6.51,0
+2017-12-26,Cruise,S-400,Rain,1.34,0,111.8,3233,7.67,1
+2018-01-11,Ballistic,THAAD,Low Visibility,1.05,0,165.0,9329,4.17,0
+2018-01-28,Cruise,S-400,Low Visibility,1.47,0,197.7,29306,6.39,0
+2018-02-13,Ballistic,Experimental,Rain,,0,53.5,19433,4.98,1
+2018-03-02,Hypersonic Glide,PAC-3,Cloudy,,0,386.2,25589,6.27,0
+2018-03-18,Ballistic,S-400,Rain,2.41,0,129.1,18708,2.9,0
+2018-04-04,Hypersonic Glide,S-400,Clear,2.31,0,221.1,4335,9.57,1
+2018-04-20,Hypersonic Glide,THAAD,Cloudy,,,366.7,10439,4.83,0
+2018-05-07,Cruise,PAC-3,Cloudy,,0,,10889,8.05,0
+2018-05-23,Cruise,THAAD,Cloudy,1.59,0,425.0,2147,6.85,0
+2018-06-09,Cruise,THAAD,Cloudy,,0,,14983,2.97,1
+2018-06-25,Ballistic,S-400,Cloudy,1.69,0,82.4,27889,0.73,1
+2018-07-12,Air-Breathing Hypersonic,Experimental,Rain,1.4,0,437.8,16270,0.6,0
+2018-07-28,Ballistic,THAAD,Low Visibility,1.37,0,69.0,4324,4.4,0
+2018-08-14,Hypersonic Glide,S-400,Clear,3.9,0,58.4,31727,4.84,1
+2018-08-30,Hypersonic Glide,PAC-3,Clear,,0,464.5,21087,2.04,0
+2018-09-16,Hypersonic Glide,Experimental,Clear,3.96,,437.9,1067,6.07,1
+2018-10-02,Hypersonic Glide,Experimental,Rain,4.74,0,309.1,18280,3.13,1
+2018-10-19,Air-Breathing Hypersonic,S-400,Cloudy,3.5,,308.0,8846,7.18,1
+2018-11-04,Cruise,THAAD,Low Visibility,3.05,0,369.3,5453,7.34,1
+2018-11-21,Cruise,THAAD,Clear,4.99,0,238.0,15308,8.61,1
+2018-12-07,Cruise,THAAD,Clear,3.77,0,101.8,21710,9.75,0
+2018-12-24,Cruise,Experimental,Rain,,0,59.4,8799,1.31,0
+2019-01-09,Hypersonic Glide,THAAD,Low Visibility,,0,196.1,14871,3.71,0
+2019-01-26,Ballistic,THAAD,Clear,2.77,0,410.6,23420,5.62,1
+2019-02-11,Cruise,Experimental,Cloudy,4.07,0,328.2,3453,3.19,1
+2019-02-28,Hypersonic Glide,S-400,Clear,4.48,0,424.4,34125,4.66,1
+2019-03-16,Hypersonic Glide,THAAD,Low Visibility,3.56,0,463.9,2834,2.67,0
+2019-04-02,Cruise,THAAD,Clear,2.66,0,89.7,18649,2.48,0
+2019-04-19,Ballistic,PAC-3,Cloudy,3.45,0,430.0,18002,0.97,1
+2019-05-05,Hypersonic Glide,THAAD,Clear,4.99,0,159.5,34597,2.9,1
+2019-05-22,Cruise,S-400,Rain,,0,315.0,19618,3.84,1
+2019-06-07,Hypersonic Glide,S-400,Clear,4.93,0,285.8,13970,6.15,0
+2019-06-24,Air-Breathing Hypersonic,S-400,Cloudy,4.65,0,228.1,16719,2.48,1
+2019-07-10,Cruise,PAC-3,Cloudy,2.53,0,189.6,22430,8.65,0
+2019-07-27,Cruise,THAAD,Rain,,0,,34345,1.6,1
+2019-08-12,Ballistic,Experimental,Low Visibility,4.2,0,199.9,9250,3.27,0
+2019-08-29,Hypersonic Glide,THAAD,Cloudy,3.84,0,125.7,1060,5.78,1
+2019-09-14,Air-Breathing Hypersonic,S-400,Rain,3.17,,279.7,27703,3.13,0
+2019-10-01,Ballistic,PAC-3,Clear,4.1,,101.3,12395,7.63,1
+2019-10-17,Hypersonic Glide,Experimental,Cloudy,2.78,0,,25786,4.98,0
+2019-11-03,Cruise,S-400,Clear,3.59,0,457.7,22174,5.15,0
+2019-11-19,Hypersonic Glide,PAC-3,Cloudy,3.63,0,207.2,27116,4.99,0
+2019-12-06,Ballistic,PAC-3,Cloudy,4.88,0,377.3,25863,3.09,1
+2019-12-22,Cruise,S-400,Low Visibility,4.69,0,418.5,11971,0.23,1
+2020-01-08,Hypersonic Glide,S-400,Clear,3.16,0,416.8,2029,9.45,0
+2020-01-24,Air-Breathing Hypersonic,PAC-3,Cloudy,3.75,0,156.3,19337,5.05,1
+2020-02-10,Ballistic,Experimental,Cloudy,,0,115.9,28566,9.67,0
+2020-02-26,Cruise,Experimental,Low Visibility,4.78,0,138.8,6540,2.15,1
+2020-03-14,Air-Breathing Hypersonic,THAAD,Rain,4.68,0,321.1,27380,3.53,1
+2020-03-30,Hypersonic Glide,PAC-3,Clear,3.25,0,392.1,16529,0.51,0
+2020-04-16,Ballistic,Experimental,Cloudy,4.1,0,345.0,24490,4.95,1
+2020-05-02,Ballistic,THAAD,Cloudy,4.02,0,129.7,22294,8.82,1
+2020-05-19,Ballistic,S-400,Low Visibility,2.88,0,397.8,28496,6.54,0
+2020-06-04,Ballistic,THAAD,Cloudy,4.41,,272.4,2676,4.71,1
+2020-06-21,Ballistic,PAC-3,Cloudy,3.85,,389.5,27278,5.37,1
+2020-07-07,Hypersonic Glide,Experimental,Clear,,,391.9,16289,8.47,1
+2020-07-24,Hypersonic Glide,Experimental,Clear,3.83,0,252.0,10623,4.31,1
+2020-08-09,Cruise,PAC-3,Rain,2.5,0,465.9,2011,8.82,0
+2020-08-26,Air-Breathing Hypersonic,S-400,Cloudy,,0,304.0,7381,7.28,0
+2020-09-11,Ballistic,THAAD,Cloudy,2.55,0,,1945,7.64,1
+2020-09-28,Hypersonic Glide,Experimental,Cloudy,4.82,0,331.0,32701,3.66,1
+2020-10-15,Hypersonic Glide,THAAD,Cloudy,4.7,0,438.9,18280,4.01,1
+2020-10-31,Ballistic,Experimental,Clear,4.58,0,332.2,34624,5.7,0
+2020-11-17,Hypersonic Glide,Experimental,Rain,3.27,0,117.9,19234,1.95,1
+2020-12-03,Air-Breathing Hypersonic,PAC-3,Clear,2.64,0,80.7,9239,5.53,0
+2020-12-20,Cruise,S-400,Clear,4.7,0,249.0,26488,0.74,1
+2021-01-05,Hypersonic Glide,THAAD,Cloudy,4.87,0,186.3,7093,5.04,0
+2021-01-22,Ballistic,Experimental,Clear,2.71,0,173.6,12815,7.64,1
+2021-02-07,Ballistic,THAAD,Rain,3.71,,75.3,27439,2.8,0
+2021-02-24,Ballistic,Experimental,Clear,2.67,0,,30370,9.89,1
+2021-03-12,Hypersonic Glide,PAC-3,Clear,,0,189.7,11951,6.8,1
+2021-03-29,Cruise,PAC-3,Rain,4.41,0,253.4,4794,1.19,1
+2021-04-14,Air-Breathing Hypersonic,S-400,Clear,,0,75.6,13196,9.75,0
+2021-05-01,Hypersonic Glide,Experimental,Clear,7.38,,424.3,31187,3.94,1
+2021-05-17,Cruise,THAAD,Low Visibility,7.75,1,84.5,26144,7.95,1
+2021-06-03,Air-Breathing Hypersonic,PAC-3,Clear,6.33,1,438.9,31364,3.39,1
+2021-06-19,Cruise,THAAD,Rain,,1,434.9,13839,9.39,1
+2021-07-06,Ballistic,THAAD,Clear,7.12,1,326.8,34093,7.55,1
+2021-07-22,Ballistic,S-400,Clear,6.06,1,278.2,17619,1.99,1
+2021-08-08,Ballistic,THAAD,Clear,,1,,17664,5.09,1
+2021-08-24,Cruise,THAAD,Clear,8.65,1,299.4,32388,5.0,1
+2021-09-10,Air-Breathing Hypersonic,THAAD,Cloudy,6.01,1,406.3,18415,0.45,0
+2021-09-26,Cruise,PAC-3,Clear,6.56,1,453.1,28139,1.37,1
+2021-10-13,Cruise,S-400,Clear,,1,252.4,25584,3.33,1
+2021-10-29,Hypersonic Glide,S-400,Rain,8.25,1,414.4,3222,4.74,1
+2021-11-15,Ballistic,PAC-3,Clear,7.19,1,343.3,21284,4.57,1
+2021-12-01,Air-Breathing Hypersonic,S-400,Clear,7.59,1,194.7,28870,6.06,1
+2021-12-18,Hypersonic Glide,PAC-3,Clear,5.61,1,264.0,19318,5.16,1
+2022-01-03,Cruise,S-400,Clear,6.12,1,117.9,11581,3.28,1
+2022-01-20,Cruise,S-400,Rain,6.69,1,77.8,3262,6.13,1
+2022-02-05,Air-Breathing Hypersonic,Experimental,Cloudy,,1,96.6,23301,1.63,1
+2022-02-22,Cruise,THAAD,Rain,6.15,1,454.6,11074,9.91,1
+2022-03-11,Hypersonic Glide,S-400,Cloudy,6.1,1,204.5,21290,7.39,1
+2022-03-27,Ballistic,Experimental,Rain,5.35,1,371.4,15201,2.99,1
+2022-04-13,Hypersonic Glide,Experimental,Cloudy,8.16,1,277.0,24296,3.36,1
+2022-04-29,Hypersonic Glide,THAAD,Clear,6.14,1,127.7,12628,8.28,1
+2022-05-16,Ballistic,PAC-3,Cloudy,9.53,,161.5,1961,5.32,1
+2022-06-01,Ballistic,THAAD,Low Visibility,9.3,1,247.0,30516,7.09,1
+2022-06-18,Hypersonic Glide,S-400,Clear,5.35,,247.7,12663,3.0,1
+2022-07-04,Cruise,Experimental,Rain,6.19,,,34936,8.16,1
+2022-07-21,Cruise,Experimental,Rain,,,121.4,9972,3.68,0
+2022-08-06,Hypersonic Glide,THAAD,Cloudy,6.07,1,217.8,34310,6.74,1
+2022-08-23,Ballistic,THAAD,Cloudy,5.66,1,177.3,33202,9.8,0
+2022-09-08,Ballistic,THAAD,Low Visibility,9.68,1,233.9,3088,5.84,1
+2022-09-25,Ballistic,S-400,Clear,,1,202.3,22494,7.97,1
+2022-10-11,Ballistic,THAAD,Cloudy,7.36,1,319.0,13034,7.25,1
+2022-10-28,Ballistic,S-400,Cloudy,,1,405.2,28137,6.88,1
+2022-11-13,Hypersonic Glide,PAC-3,Cloudy,9.04,,341.3,23939,0.27,1
+2022-11-30,Ballistic,THAAD,Cloudy,5.95,1,79.7,33371,4.75,1
+2022-12-16,Hypersonic Glide,Experimental,Low Visibility,,1,92.5,5425,9.67,1
+2023-01-02,Cruise,THAAD,Clear,7.16,1,355.3,21461,7.83,1
+2023-01-18,Cruise,S-400,Clear,,1,177.9,27455,7.76,1
+2023-02-04,Cruise,S-400,Cloudy,7.34,1,375.7,1700,5.78,1
+2023-02-20,Cruise,Experimental,Clear,,1,345.5,2819,7.21,1
+2023-03-09,Cruise,Experimental,Clear,8.37,1,457.9,27358,5.84,1
+2023-03-25,Ballistic,Experimental,Cloudy,,1,443.0,13138,1.71,0
+2023-04-11,Hypersonic Glide,THAAD,Cloudy,5.49,,200.0,13708,6.29,1
+2023-04-27,Cruise,THAAD,Clear,,1,312.2,20069,6.2,1
+2023-05-14,Cruise,S-400,Low Visibility,14.07,1,,21375,8.41,1
+2023-05-30,Ballistic,S-400,Cloudy,20.34,1,207.4,23927,1.48,1
+2023-06-16,Hypersonic Glide,Experimental,Cloudy,12.98,1,485.5,33234,6.81,1
+2023-07-02,Air-Breathing Hypersonic,PAC-3,Cloudy,12.28,1,364.3,13334,0.32,1
+2023-07-19,Ballistic,PAC-3,Clear,15.38,1,,26826,9.48,0
+2023-08-05,Cruise,S-400,Rain,15.06,1,317.8,20300,1.1,0
+2023-08-21,Cruise,Experimental,Rain,13.34,1,,18766,0.19,1
+2023-09-07,Cruise,Experimental,Cloudy,,1,189.3,14232,3.14,1
+2023-09-23,Cruise,S-400,Rain,21.08,,219.5,22909,1.51,1
+2023-10-10,Cruise,THAAD,Rain,15.32,1,406.2,9111,6.91,1
+2023-10-26,Cruise,PAC-3,Clear,20.34,1,415.9,4413,4.1,1
+2023-11-12,Ballistic,S-400,Cloudy,16.6,,351.6,25880,7.75,1
+2023-11-28,Cruise,Experimental,Clear,,,423.0,17717,9.21,0
+2023-12-15,Air-Breathing Hypersonic,THAAD,Clear,,1,382.4,13851,8.73,1
+2023-12-31,Ballistic,S-400,Cloudy,20.03,1,358.4,19877,7.36,1
+2024-01-17,Hypersonic Glide,Experimental,Cloudy,21.63,1,286.9,9531,0.62,0
+2024-02-02,Cruise,PAC-3,Clear,21.12,1,,9479,1.38,1
+2024-02-19,Air-Breathing Hypersonic,S-400,Cloudy,20.18,1,240.5,15896,2.07,0
+2024-03-06,Ballistic,PAC-3,Cloudy,,1,212.8,34874,3.25,1
+2024-03-23,Air-Breathing Hypersonic,THAAD,Cloudy,15.83,1,213.2,10352,6.62,1
+2024-04-08,Ballistic,PAC-3,Clear,,1,131.1,32118,5.25,1
+2024-04-25,Ballistic,THAAD,Low Visibility,14.81,1,146.4,17446,3.14,1
+2024-05-11,Ballistic,S-400,Clear,10.7,1,476.5,4730,1.73,1
+2024-05-28,Cruise,S-400,Rain,14.55,1,268.8,29922,9.12,0
+2024-06-13,Cruise,PAC-3,Clear,,1,151.9,16095,3.42,1
+2024-06-30,Air-Breathing Hypersonic,PAC-3,Clear,13.18,1,111.9,31504,3.54,1
+2024-07-16,Ballistic,Experimental,Rain,,1,84.7,15856,7.72,1
+2024-08-02,Hypersonic Glide,S-400,Rain,15.46,1,430.0,3528,7.21,0
+2024-08-18,Ballistic,PAC-3,Cloudy,15.08,1,95.5,24026,6.43,1
+2024-09-04,Cruise,Experimental,Cloudy,21.49,1,,29670,6.93,1
+2024-09-20,Ballistic,PAC-3,Cloudy,21.95,,425.8,11525,6.1,1
+2024-10-07,Cruise,THAAD,Clear,16.67,1,447.7,12486,1.92,0
+2024-10-23,Cruise,PAC-3,Clear,,1,,2740,2.47,1
+2024-11-09,Ballistic,PAC-3,Cloudy,,1,201.5,19204,5.58,1
+2024-11-25,Ballistic,PAC-3,Cloudy,,1,394.8,31250,2.25,1
+2024-12-12,Air-Breathing Hypersonic,Experimental,Rain,21.62,1,109.0,29871,9.73,0

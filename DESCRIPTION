@@ -18,7 +18,9 @@ Depends:
 Imports:
     stats,
     graphics,
-    car
+    car,
+    splines,
+    readxl
 Suggests:
     knitr,
     rmarkdown,

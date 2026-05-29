@@ -18,45 +18,55 @@ knitr::opts_chunk$set(
 
 ## Introduction
 
-The `hypersonicIntercept` package provides tools for statistical modeling of missile interception success rates based on speed characteristics. This vignette demonstrates the basic workflow.
+The `hypersonicIntercept` package provides tools for statistical modeling of missile interception success rates based on speed characteristics. This vignette demonstrates the basic workflow using the included sample dataset.
 
 ## Loading Data
 
-First, load your missile launch database from an Excel file:
+The package includes a realistic sample dataset with 221 missile launch records:
 
 ```{r eval=FALSE}
 library(hypersonicIntercept)
 
+# Load the sample dataset
+data(missile_launch_database)
+head(missile_launch_database)
+
+# Or import your own data from Excel
 data <- import_missile_data("path/to/MissileLaunchDatabase.xlsx")
-head(data)
 ```
 
 ## Fitting Models
 
-The package includes several pre-built logistic regression models:
+The package includes several pre-built logistic regression models, from simple to advanced:
 
-### Simple Mach Model
+### Simple Models
 ```{r eval=FALSE}
-model_mach <- fit_mach_model(data)
+# Mach-based model
+model_mach <- fit_mach_model(missile_launch_database)
 summary(model_mach)
-```
 
-### Hypersonic Designation Model
-```{r eval=FALSE}
-model_hypersonic <- fit_hypersonic_model(data)
+# Hypersonic designation model
+model_hypersonic <- fit_hypersonic_model(missile_launch_database)
 summary(model_hypersonic)
 ```
 
-### Non-linear Mach Model
+### Advanced Models
 ```{r eval=FALSE}
-model_mach_sq <- fit_mach_squared_model(data)
-summary(model_mach_sq)
-```
+# Log-transformed Mach
+model_log <- fit_mach_log_model(missile_launch_database)
+summary(model_log)
 
-### Interaction Model
-```{r eval=FALSE}
-model_interaction <- fit_interaction_model(data)
-summary(model_interaction)
+# Polynomial Mach (non-linear)
+model_poly <- fit_polynomial_mach_model(missile_launch_database, degree = 3)
+summary(model_poly)
+
+# Natural cubic splines
+model_spline <- fit_spline_model(missile_launch_database, knots = 4)
+summary(model_spline)
+
+# Full additive model with interactions (best performer from research)
+model_full <- fit_full_additive_model(missile_launch_database)
+summary(model_full)
 ```
 
 ## Making Predictions
@@ -65,48 +75,137 @@ Generate predictions for new speed values:
 
 ```{r eval=FALSE}
 # Create a sequence of Mach speeds
-new_speeds <- data.frame(Mach = seq(1, 22, by = 0.5))
+new_speeds <- data.frame(Mach = seq(1, 22, by = 1))
 
-# Get predicted probabilities of successful interception
+# Get predicted probabilities
 predictions <- predict_interception(model_mach, new_speeds)
-
-# View first few predictions
 head(predictions)
+
+# Get predictions with confidence intervals
+predictions_ci <- predict_interception_ci(model_mach, new_speeds)
+head(predictions_ci)
 ```
 
 ## Comparing Models
 
-Compare multiple models using AIC and BIC criteria:
+Compare multiple models using AIC, BIC, and other criteria:
 
 ```{r eval=FALSE}
+# Compare individual models
 comparison <- compare_models(
   model_mach,
-  model_hypersonic,
-  model_mach_sq,
-  model_interaction
+  model_log,
+  model_poly,
+  model_full
 )
 
 print(comparison)
+
+# Get detailed summary table
+summary_table <- get_model_summary_table(
+  model_mach,
+  model_log,
+  model_poly,
+  model_full
+)
+
+print(summary_table)
 ```
 
-The model with the lowest AIC has the best balance between fit quality and model complexity.
+## Model Diagnostics
+
+Assess model quality and identify potential issues:
+
+```{r eval=FALSE}
+# Calculate diagnostic statistics
+diagnostics <- calculate_model_diagnostics(model_mach)
+
+# Identify outliers (standardized residuals > 3)
+outliers <- diagnostics$outliers
+print(paste("Outliers detected at indices:", paste(outliers, collapse=", ")))
+
+# Identify influential points (high Cook's distance)
+influential <- diagnostics$influential_points
+print(paste("Influential points at indices:", paste(influential, collapse=", ")))
+```
+
+## Model Performance
+
+Calculate classification performance metrics:
+
+```{r eval=FALSE}
+# Get performance metrics
+performance <- calculate_model_performance(model_mach, missile_launch_database)
+print(performance)
+
+# Metrics include:
+# - Accuracy: Overall proportion of correct classifications
+# - Sensitivity: True positive rate (successfully intercepted)
+# - Specificity: True negative rate (correctly predicted failures)
+# - Precision: Positive predictive value
+# - F1 Score: Harmonic mean of precision and sensitivity
+```
 
 ## Visualization
 
 Plot the fitted model against your data:
 
 ```{r eval=FALSE}
-plot_model_fit(data, model_mach, "Mach", "Mach Speed")
+plot_model_fit(missile_launch_database, model_mach, "Mach", "Mach Speed")
+
+# For models with multiple predictors
+# For hypersonic model
+plot_model_fit(missile_launch_database, model_hypersonic, 
+               "Hypersonic", "Hypersonic Status")
 ```
 
-This creates a scatter plot of your observed interception outcomes with the fitted logistic curve overlaid in red.
+## Complete Workflow Example
 
-## Workflow Summary
+Here's a complete analysis pipeline:
 
-1. **Load data** using `import_missile_data()`
-2. **Fit models** using the various `fit_*_model()` functions
-3. **Compare models** using `compare_models()`
-4. **Make predictions** using `predict_interception()`
-5. **Visualize results** using `plot_model_fit()`
+```{r eval=FALSE}
+library(hypersonicIntercept)
+data(missile_launch_database)
 
-For more information, see the model diagnostics vignette and individual function documentation.
+# 1. Fit multiple candidate models
+m1 <- fit_mach_model(missile_launch_database)
+m2 <- fit_log_model(missile_launch_database)
+m3 <- fit_full_additive_model(missile_launch_database)
+
+# 2. Compare models
+comparison <- compare_models(m1, m2, m3)
+print(comparison)
+
+# 3. Select best model
+best_model <- m3  # Typically lowest AIC
+
+# 4. Check diagnostics
+diagnostics <- calculate_model_diagnostics(best_model)
+cat("Outliers:", length(diagnostics$outliers), "\n")
+cat("Influential points:", length(diagnostics$influential_points), "\n")
+
+# 5. Evaluate performance
+performance <- calculate_model_performance(best_model, missile_launch_database)
+print(performance)
+
+# 6. Make predictions
+new_data <- data.frame(
+  Mach = c(5, 10, 15, 20),
+  Hypersonic = c(0, 1, 1, 1)
+)
+predictions <- predict_interception_ci(best_model, new_data)
+print(predictions)
+
+# 7. Visualize
+plot_model_fit(missile_launch_database, best_model, "Mach", "Mach Speed")
+```
+
+## Advanced Topics
+
+For more information on specific analyses, see:
+- Model diagnostics and validation
+- Handling missing data
+- Feature engineering and selection
+- Cross-validation strategies
+
+For details, see function documentation: `?function_name`
