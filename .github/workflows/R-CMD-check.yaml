@@ -36,8 +36,13 @@ jobs:
 
       - name: Install dependencies
         run: |
-          install.packages(c("remotes", "rcmdcheck", "testthat", "readxl", "car"))
+          install.packages(c("remotes", "rcmdcheck", "roxygen2", "testthat", "readxl", "car"))
           remotes::install_deps(dependencies = TRUE)
+        shell: Rscript {0}
+
+      - name: Generate documentation with roxygen2
+        run: |
+          roxygen2::roxygenise()
         shell: Rscript {0}
 
       - name: Check
@@ -65,8 +70,13 @@ jobs:
 
       - name: Install dependencies
         run: |
-          install.packages(c("remotes", "covr", "testthat", "readxl", "car"))
+          install.packages(c("remotes", "covr", "roxygen2", "testthat", "readxl", "car"))
           remotes::install_deps(dependencies = TRUE)
+        shell: Rscript {0}
+
+      - name: Generate documentation with roxygen2
+        run: |
+          roxygen2::roxygenise()
         shell: Rscript {0}
 
       - name: Test coverage
