@@ -50,4 +50,5 @@
 #' predictions <- predict_interception(model, new_speeds)
 #' print(predictions)
 #'
+#' @export
 "missile_launch_database"
