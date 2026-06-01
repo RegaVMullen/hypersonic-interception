@@ -101,7 +101,8 @@ fit_spline_model <- function(data, knots = 4) {
   #'
   #' @return A glm object of class "binomial"
   #'
-  #' @importFrom stats glm binomial ns
+  #' @importFrom stats glm binomial
+  #' @importFrom splines ns
   #'
   #' @examples
   #' \dontrun{
