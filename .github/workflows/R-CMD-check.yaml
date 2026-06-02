@@ -7,7 +7,7 @@ on:
     branches: [ master, main, develop ]
 
 jobs:
-  R-CMD-check:
+  r-cmd-check:
     runs-on: ${{ matrix.config.os }}
 
     strategy:
@@ -15,7 +15,7 @@ jobs:
       matrix:
         config:
           - {os: windows-latest, r: 'release'}
-          - {os: macOS-latest, r: 'release'}
+          - {os: macos-latest, r: 'release'}
           - {os: ubuntu-latest, r: 'release'}
           - {os: ubuntu-latest, r: 'devel'}
 
@@ -31,12 +31,12 @@ jobs:
       - name: Install system dependencies (Ubuntu)
         if: runner.os == 'Linux'
         run: |
-          sudo apt-get update -y
+          sudo apt-get update
           sudo apt-get install -y libcurl4-openssl-dev libssl-dev libxml2-dev
 
       - name: Install dependencies
         run: |
-          install.packages(c("remotes", "rcmdcheck", "roxygen2", "testthat", "readxl", "car"))
+          install.packages(c("remotes", "rcmdcheck", "roxygen2", "testthat", "readxl", "car"), repos = "https://cloud.r-project.org")
           remotes::install_deps(dependencies = TRUE)
         shell: Rscript {0}
 
@@ -70,7 +70,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          install.packages(c("remotes", "covr", "roxygen2", "testthat", "readxl", "car"))
+          install.packages(c("remotes", "covr", "roxygen2", "testthat", "readxl", "car"), repos = "https://cloud.r-project.org")
           remotes::install_deps(dependencies = TRUE)
         shell: Rscript {0}
 
